@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cafe-v.git/static/css/main.7c83d380.css",
+    "main.js": "/cafe-v.git/static/js/main.24d86832.js",
+    "static/js/453.301385c6.chunk.js": "/cafe-v.git/static/js/453.301385c6.chunk.js",
+    "static/media/logo.png": "/cafe-v.git/static/media/logo.e1a528fcb47c78f0362c.png",
+    "index.html": "/cafe-v.git/index.html",
+    "main.7c83d380.css.map": "/cafe-v.git/static/css/main.7c83d380.css.map",
+    "main.24d86832.js.map": "/cafe-v.git/static/js/main.24d86832.js.map",
+    "453.301385c6.chunk.js.map": "/cafe-v.git/static/js/453.301385c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c83d380.css",
+    "static/js/main.24d86832.js"
+  ]
+}
