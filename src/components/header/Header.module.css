@@ -1,0 +1,31 @@
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: #fffdf8;
+  border-bottom: 2px solid #e2c7a0;
+  font-family: 'Lora', sans-serif;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8b4513; /* тёпло-коричневый, как кофе */
+}
+
+.nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #c45b00; /* насыщенный кофейный оттенок */
+}

@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fffdf8;
+  border-top: 2px solid #e2c7a0;
+  font-family: 'Lora', sans-serif;
+  color: #4a3c2c;
+}
+
+.footer h2 {
+  margin-bottom: 0.5rem;
+  color: #8b4513;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+}
+
+.left {
+  max-width: 50%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+
+.right {
+  text-align: right;
+}
+
+
