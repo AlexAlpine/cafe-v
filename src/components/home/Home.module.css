@@ -25,6 +25,7 @@
 
 .button {
   margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 0.75rem 1.5rem;
   background-color: #8b4513;
   color: #fff;
@@ -54,4 +55,39 @@ h1 {
 
 p {
   margin-bottom: 0.5rem;
+}
+
+.photoImage {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.photoImage img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
