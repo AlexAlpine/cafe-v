@@ -1,0 +1,244 @@
+.home {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #fdf6ec, #fcecd6);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4a3c2c;
+}
+
+.content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #8b4513;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #6f3410;
+}
+
+
+
+
+
+
+import React from 'react';
+import styles from './Home.module.css';
+
+export default function Home() {
+  return (
+    <section className={styles.home}>
+      <div className={styles.content}>
+        <h1>Willkommen im Cafe Vdoma</h1>
+        <p>
+          Entdecke unsere einzigartigen Streetfood-Kreationen: Eis im Becher, Pelmeni to go, Currywurst & knusprige Pommes.
+        </p>
+        <p>
+          Alles frisch zubereitet, mit Liebe serviert – direkt aus unserem kleinen, gemütlichen Laden im Herzen der Stadt.
+        </p>
+        <button className={styles.button}>Speisekarte ansehen</button>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: #fffdf8;
+  border-bottom: 2px solid #e2c7a0;
+  font-family: 'Lora', sans-serif;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8b4513; /* тёпло-коричневый, как кофе */
+}
+
+.nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #c45b00; /* насыщенный кофейный оттенок */
+}
+
+
+
+
+
+import React from "react";
+import styles from './Header.module.css';
+
+
+export default function Header() {
+  return (
+    <header className={styles.header}>
+      <div className={styles.logo}>Street Food Vdoma</div>
+      <nav className={styles.nav}>
+        <a href="#menu">Speisekarte</a>
+        <a href="#shop">Shop</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#oeffnungszeiten">Öffnungszeiten</a>
+      </nav>
+    </header>
+  );
+}
+
+
+футер
+
+import React from 'react';
+import styles from './Footer.module.css';
+import logo from '../assets/logo.png'
+
+export default function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.left}>
+        <img src={logo} alt="KaffeeHaus Logo" className={styles.logo} />
+        <h2>Vdoma</h2>
+        <p>Café seit 2025</p>
+        <p>© {new Date().getFullYear()} Vdoma. Alle Rechte vorbehalten.</p>
+      </div>
+      <div className={styles.right}>
+        <p><strong>Adresse:</strong><br />Ernst-August-Platz 10, 30159 Hannover</p>
+        <p><strong>Telefon:</strong><br />+49 176 31483xxx</p>
+        <p><strong>Email:</strong><br />kontakt@rastvorfamily.de</p>
+      </div>
+    </footer>
+  );
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fffdf8;
+  border-top: 2px solid #e2c7a0;
+  font-family: 'Lora', sans-serif;
+  color: #4a3c2c;
+}
+
+.footer h2 {
+  margin-bottom: 0.5rem;
+  color: #8b4513;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+}
+
+.left {
+  max-width: 50%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+
+.right {
+  text-align: right;
+}
+
+
+
+
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: #fcecd6;
+  border-bottom: 2px solid #e2c7a0;
+  font-family: 'Lora', sans-serif;
+  color: #8b4513;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+  background-color: #6f3410;
+}
+.content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 900px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
@@ -24,16 +25,35 @@
   max-width: 50%;
 }
 
+.right {
+  text-align: right;
+}
+
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 100px;    /* Было 100px */
+  height: 100px;      /* Было 100px */
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
 
 
-.right {
-  text-align: right;
+/* адаптивность */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .left, .right {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+.logo {
+    width: 100px;
+    height: 100px;
+  }
 }
-
-
