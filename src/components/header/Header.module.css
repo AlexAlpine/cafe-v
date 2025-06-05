@@ -1,15 +1,20 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fffdf8;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem 2rem;
-  background-color: #fffdf8;
   border-bottom: 2px solid #e2c7a0;
   font-family: 'Lora', sans-serif;
-  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 
 .logo {
   font-size: 1.8rem;

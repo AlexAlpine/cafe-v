@@ -15,12 +15,12 @@ export default function Header() {
         ☰
       </button>
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
-        <a href="#">Menü</a>
-        <a href="#">Shop</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Über uns</a>
-        <a href="#">Öffnungszeiten</a>
-      </nav>
+  <a href="#menu" onClick={() => setMenuOpen(false)}>Menü</a>
+  <a href="#shop" onClick={() => setMenuOpen(false)}>Shop</a>
+  <a href="#kontakt" onClick={() => setMenuOpen(false)}>Kontakt</a>
+  <a href="#about" onClick={() => setMenuOpen(false)}>Über uns</a>
+  <a href="#zeiten" onClick={() => setMenuOpen(false)}>Öffnungszeiten</a>
+</nav>
     </header>
   );
 }
